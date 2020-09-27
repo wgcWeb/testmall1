@@ -10,7 +10,10 @@ export function request(config) {
     timeout: 5000
   })
 
+  // 请求拦截
   instance.interceptors.request.use(config => {
+    console.log(config);
+    config.headers.Authorization = window.sessionStorage.getItem('token')
     return config
   }, err => {
   })
