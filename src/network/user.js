@@ -67,3 +67,14 @@ export function getDeleteUser(id) {
     }
   })
 }
+
+export function getGiveUserRole(id, rid) {
+  return request({
+    url: `/users/${id}/role`,
+    method: 'put',
+    data: {
+      id, 
+      rid
+    }
+  })
+}

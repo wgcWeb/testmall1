@@ -12,7 +12,7 @@ export function request(config) {
 
   // 请求拦截
   instance.interceptors.request.use(config => {
-    console.log(config);
+    // console.log(config);
     config.headers.Authorization = window.sessionStorage.getItem('token')
     return config
   }, err => {
