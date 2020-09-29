@@ -7,6 +7,7 @@ const User = () => import('views/home/childComps/user/User')
 const Rights = () => import('views/home/childComps/power/Rights')
 const Roles = () => import('views/home/childComps/power/Roles')
 const Cate = () => import('views/home/childComps/goods/Cate')
+const Params = () => import('views/home/childComps/goods/Params')
 const Login = () => import('views/login/Login')
 
 
@@ -45,6 +46,10 @@ const routes = [
       {
         path: '/categories',
         component: Cate
+      },
+      {
+        path: '/params',
+        component: Params
       },
     ]
   }
