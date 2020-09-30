@@ -30,3 +30,10 @@ html, body, #app {
 .ql-editor{
   min-height: 300px;
 }
+
+.area-select.large{
+  width: 100% !important;
+}
+.el-form-item__content{
+  line-height: 100% !important;
+}

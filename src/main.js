@@ -16,6 +16,10 @@ import 'quill/dist/quill.snow.css'
 import 'quill/dist/quill.bubble.css'
 Vue.use(VueQuillEditor)
 
+import VueAreaLinkage from 'vue-area-linkage';
+import 'vue-area-linkage/dist/index.css'; 
+Vue.use(VueAreaLinkage);
+
 Vue.config.productionTip = false
 
 new Vue({
