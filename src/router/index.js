@@ -8,6 +8,8 @@ const Rights = () => import('views/home/childComps/power/Rights')
 const Roles = () => import('views/home/childComps/power/Roles')
 const Cate = () => import('views/home/childComps/goods/Cate')
 const Params = () => import('views/home/childComps/goods/Params')
+const List = () => import('views/home/childComps/goods/List')
+const Add = () => import('views/home/childComps/goods/Add')
 const Login = () => import('views/login/Login')
 
 
@@ -50,6 +52,14 @@ const routes = [
       {
         path: '/params',
         component: Params
+      },
+      {
+        path: '/goods',
+        component: List
+      },
+      {
+        path: '/goods/add',
+        component: Add
       },
     ]
   }
