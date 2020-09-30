@@ -11,6 +11,7 @@ const Params = () => import('views/home/childComps/goods/Params')
 const List = () => import('views/home/childComps/goods/List')
 const Add = () => import('views/home/childComps/goods/Add')
 const Order = () => import('views/home/childComps/order/Order')
+const Report = () => import('views/home/childComps/report/Report')
 const Login = () => import('views/login/Login')
 
 
@@ -65,6 +66,10 @@ const routes = [
       {
         path: '/orders',
         component: Order
+      },
+      {
+        path: '/reports',
+        component: Report
       },
     ]
   }
